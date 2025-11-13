@@ -8,6 +8,8 @@ export async function addUser(user) {
         body: JSON.stringify(user)
     })
     alert("REGISTER COMPLETED");
+    window.location.href = "index.html";
+
     console.log(result);
 }
 

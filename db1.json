@@ -83,7 +83,78 @@
       "email": "manan@g.c",
       "password": "manan",
       "c_password": "manan"
+    },
+    {
+      "id": "ed96",
+      "name": "nilesh",
+      "email": "nilesh@g.c",
+      "password": "nilesh",
+      "c_password": "nilesh"
+    },
+    {
+      "id": "3216",
+      "name": "jay",
+      "email": "jay@g.c",
+      "password": "jay",
+      "c_password": "jay"
+    },
+    {
+      "id": "b681",
+      "name": "manan",
+      "email": "manan@g.c",
+      "password": "1234",
+      "c_password": "1234"
+    },
+    {
+      "id": "a51b",
+      "name": "JAY",
+      "email": "jay@g.c",
+      "password": "11",
+      "c_password": "11"
+    },
+    {
+      "id": "3532",
+      "name": "JAY",
+      "email": "jay@g.c",
+      "password": "jay",
+      "c_password": "jay"
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "id": "13e1",
+      "cuuUser": "manan@g.c",
+      "name": "mananamana",
+      "email": "jnakb@g.c",
+      "phone": "2345678"
+    },
+    {
+      "id": "5b7e",
+      "cuuUser": "manan@g.c",
+      "name": "kjsk",
+      "email": "kaln@j.c",
+      "phone": "2345678"
+    },
+    {
+      "id": "2b3d",
+      "cuuUser": "jay@g.c",
+      "name": ",mdn",
+      "email": "kasal@f.c",
+      "phone": "klwbj"
+    },
+    {
+      "id": "c939",
+      "cuuUser": "jay@g.c",
+      "name": "eajfnk",
+      "email": "lknakl@jm.c",
+      "phone": "wkjd"
+    },
+    {
+      "id": "63cd",
+      "cuuUser": "jay@g.c",
+      "name": ".,a.mfl",
+      "email": "enfkq@efklql.c",
+      "phone": "klenq"
+    }
+  ]
 }

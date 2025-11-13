@@ -19,11 +19,13 @@ if (registerForm) {
         }
 
         const user = { name, email, password, c_password };
-        await addUser(user);
+        console.log(user);
 
         if (user) {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }
+
+        await addUser(user);
     });
 }
 
@@ -57,13 +59,15 @@ if (Cot_form) {
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
         let contact = { cuuUser, name, email, phone }
-        try {
-            await addContact(contact);
-            alert("Contact Added....")
-            Cot_form.reset();
+
+        await addContact(contact);
+        alert("Contact Added....")
+        if (contact) {
+            window.location.href = "Show-contect.html";
         }
-        catch (err) {
-            alert("failed to add contact....");
-        }
+
+        Cot_form.reset();
+
+
     })
 }

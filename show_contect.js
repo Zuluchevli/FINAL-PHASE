@@ -32,4 +32,4 @@ async function load_contects() {
     
     }
 }
-load_contects()
+await load_contects()
