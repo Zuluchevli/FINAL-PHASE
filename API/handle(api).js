@@ -1,23 +1,41 @@
-import { URL } from "./api.js";
+import { ContactUrl, URL } from "./api.js";
 
-export async function addUser(user){
+export async function addUser(user) {
 
-    let result =await fetch(URL , {
+    let result = await fetch(URL, {
         method: "POST",
-        headers: {"Content-Type" : "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user)
     })
-    alert("REGISTER COMPLETED")
-    window.location.assign("http://127.0.0.1:5500/login.html");
+    alert("REGISTER COMPLETED");
+    window.location.href = "login.html";
 }
 
-export async function loginUser(email,pass) {
-    let result = await fetch(`${URL}?email=${email}&pass=${pass}`)
-    if(result.status == 200){
-        let data = await result.json()
+export async function loginUser(email, pass) {
+    let result = await fetch(`${URL}?email=${email}&pass=${pass}`);
+    let data = await result.json();
+
+    if (data.length != 0){
+        alert("login successfull")
+        localStorage.setItem("CurrUser",JSON.stringify(email));
+        return;
     }
     else{
-        alert("invalid")
-    } 
+        alert("Email and Password Not Match")
+    }
 }
 
+export async function addContact(contact){
+    
+    fetch(ContactUrl,{
+        method: "POST",
+        headers: {"Content-Type" : "application/json"},
+        body : JSON.stringify(contact)
+    })
+}
+
+export async function GetContact(){
+    let res = await fetch(ContactUrl);
+    let data = res.json();
+    return data;
+}

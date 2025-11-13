@@ -1,23 +1,35 @@
-let table = document.getElementById("tbl");
+import { GetContact } from "./API/handle(api).js";
 
-function load_contects() {
-    let curr_user = JSON.parse(sessionStorage.getItem("Current_user"))
 
-    let contect = JSON.parse(localStorage.getItem("contect"))
 
-    for (let i = 0; i < contect.length; i++) {
-        let cont_deta = contect[i]
-        if (curr_user == cont_deta.curr_user) {
+async function load_contects() {
+    let table = document.getElementById("tbl");
+
+    let data = await GetContact();
+    console.log(data);
+    
+    for (let i = 0; i < data.length; i++) {
+
+        if(curr_user == data[i].curr_user){
             let tr = document.createElement("tr")
-            let obj = Object.values(cont_deta)
-            for (let j = 0; j < obj.length; j++) {
-                let td = document.createElement("td")
-                td.textContent = obj[j]
-                tr.appendChild(td)
-            }
-            table.appendChild(tr)
 
+            // name coloum
+            let td1 = document.createElement("td");
+            td1.textContent = data[i].name;
+            // email coloum
+            let td2 = document.createElement("td");
+            td2.textContent = data[i].email;
+            // phone coloum
+            let td3 = document.createElement("td");
+            td3.textContent = data[i].phone;
+
+            tr.appendChild(td1)
+            tr.appendChild(td2)
+            tr.appendChild(td3)
+
+            table.appendChild(tr)
         }
+    
     }
 }
 load_contects()
