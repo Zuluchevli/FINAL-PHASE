@@ -19,13 +19,10 @@ if (registerForm) {
         }
 
         const user = { name, email, password, c_password };
-        try {
-            await addUser(user);
-            alert("ragister complate.. redirect to login....");
+        await addUser(user);
+
+        if (user) {
             window.location.href = "login.html";
-        }
-        catch (err) {
-            alert("ragisteration faild..")
         }
     });
 }
@@ -44,7 +41,7 @@ if (loginForm) {
             } else {
                 alert("email and password not matched..")
             }
-        }catch(err){
+        } catch (err) {
             alert("login failed....")
         }
     })
@@ -60,7 +57,7 @@ if (Cot_form) {
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
         let contact = { cuuUser, name, email, phone }
-        try  {
+        try {
             await addContact(contact);
             alert("Contact Added....")
             Cot_form.reset();

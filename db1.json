@@ -1,146 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "email": "john.doe@example.com"
-    },
-    {
-      "id": "2",
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com"
-    },
-    {
-      "id": "6d3a",
-      "name": "mohil",
-      "email": "mohil@example.com"
-    },
-    {
-      "id": "3",
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com"
-    },
-    {
-      "id": "4",
-      "name": "Bob Brown",
-      "email": "bob.brown@example.com"
-    },
-    {
-      "id": "5",
-      "name": "Charlie Davis",
-      "email": "charlie.davis@example.com"
-    },
-    {
-      "id": "c066",
-      "name": "zulu",
-      "email": "zulu@example.com"
-    },
-    {
-      "id": "5ef2",
-      "name": "zulu",
-      "email": "zulu@gmail.com",
-      "phone": "1234567890",
-      "pass": "aaaa"
-    },
-    {
-      "id": "db2e",
-      "name": "mohil",
-      "email": "mohil@gmail.com",
-      "phone": "123456789",
-      "pass": "aaaa"
-    },
-    {
-      "id": "4c03",
-      "name": "mohil",
-      "email": "mohil",
-      "phone": "mohil",
-      "pass": "mohil"
-    },
-    {
-      "id": "bcf8",
-      "name": "manan",
-      "email": "manan@g.c",
-      "phone": "1234567890",
-      "pass": "manan@qwe"
-    },
-    {
-      "id": "8b4a",
-      "name": "zulu chevli",
-      "email": "zulu_19@icloud.com",
-      "phone": "23714",
-      "pass": "DJKAD"
-    },
-    {
-      "id": "1fb7",
-      "name": "manan",
-      "email": "zulu_19@icloud.com",
-      "phone": "1234567",
-      "pass": "mdcka"
-    },
-    {
-      "id": "4a68",
-      "name": "manan",
-      "email": "manan@h.c",
-      "phone": "1234567",
-      "pass": "kjwdjqhb"
-    },
-    {
-      "id": "e44b",
-      "name": "zulu chevli",
-      "email": "zulu_19@gmail.com",
-      "password": "zulu123",
-      "c_password": "zulu123"
-    },
-    {
-      "id": "7fd5",
-      "name": "rakhi",
-      "email": "rakhi@g.c",
-      "password": "rakhi123",
-      "c_password": "rakhi123"
-    },
-    {
-      "id": "3a79",
-      "name": "adghccv",
-      "email": "KJEJDHQ@EFKLF.C",
-      "password": "SBJ",
-      "c_password": "QFCNJKF"
-    },
-    {
-      "id": "1819",
-      "name": "manan chevli",
-      "email": "manan@g.c",
-      "password": "manan",
-      "c_password": "mnaqna"
-    },
-    {
-      "id": "4f9c",
-      "name": "rakhi ",
-      "email": "rakhi@g.c",
-      "password": "mnan",
-      "c_password": "manan"
-    },
-    {
-      "id": "dddd",
-      "name": "manan",
-      "email": "manan@g.c",
-      "password": "manan",
-      "c_password": "manan"
-    },
-    {
-      "id": "15af",
-      "name": "zulu",
-      "email": "zulu_19@gmail.com",
-      "password": "manan",
-      "c_password": "manan"
-    },
-    {
-      "id": "eece",
-      "name": "kjb",
-      "email": "zulu_19@gmail.com",
-      "password": "qq",
-      "c_password": "qq"
-    },
-    {
       "id": "00ac",
       "name": "zulu",
       "email": "zulu_19@gmail.com",
@@ -202,6 +62,27 @@
       "email": "nileshchevli75@gmail.com",
       "password": "nilesh",
       "c_password": "nilesh"
+    },
+    {
+      "id": "d928",
+      "name": "manan",
+      "email": "manan@g.c",
+      "password": "manan",
+      "c_password": "manan"
+    },
+    {
+      "id": "e75c",
+      "name": "zulu",
+      "email": "zulu_19@gmail.com",
+      "password": "zulu",
+      "c_password": "zulu"
+    },
+    {
+      "id": "2779",
+      "name": "manan",
+      "email": "manan@g.c",
+      "password": "manan",
+      "c_password": "manan"
     }
   ],
   "contacts": []

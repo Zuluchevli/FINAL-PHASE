@@ -1,6 +1,6 @@
 import { GetContact } from "./API/handle(api).js";
 
-
+let cuuUser = JSON.parse(localStorage.getItem("CurrUser"))
 
 async function load_contects() {
     let table = document.getElementById("tbl");

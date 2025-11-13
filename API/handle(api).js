@@ -8,33 +8,34 @@ export async function addUser(user) {
         body: JSON.stringify(user)
     })
     alert("REGISTER COMPLETED");
-    window.location.href = "login.html";
+    console.log(result);
 }
 
 export async function loginUser(email, pass) {
-    let result = await fetch(`${URL}?email=${email}&pass=${pass}`);
+    let result = await fetch(`${URL}?email=${email}&password=${pass}`);
+
     let data = await result.json();
 
-    if (data.length != 0){
+    if (data.length != 0) {
+        localStorage.setItem("CurrUser", JSON.stringify(email));
         alert("login successfull")
-        localStorage.setItem("CurrUser",JSON.stringify(email));
-        return;
+        return true;
     }
-    else{
-        alert("Email and Password Not Match")
+    else {
+        return false;
     }
 }
 
-export async function addContact(contact){
-    
-   return await fetch(ContactUrl,{
+export async function addContact(contact) {
+
+    return await fetch(ContactUrl, {
         method: "POST",
-        headers: {"Content-Type" : "application/json"},
-        body : JSON.stringify(contact)
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(contact)
     })
 }
 
-export async function GetContact(){
+export async function GetContact() {
     let res = await fetch(ContactUrl);
     let data = res.json();
     return data;
