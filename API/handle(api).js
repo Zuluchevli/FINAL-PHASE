@@ -27,7 +27,7 @@ export async function loginUser(email, pass) {
 
 export async function addContact(contact){
     
-    fetch(ContactUrl,{
+   return await fetch(ContactUrl,{
         method: "POST",
         headers: {"Content-Type" : "application/json"},
         body : JSON.stringify(contact)

@@ -18,14 +18,16 @@ if (registerForm) {
             return;
         }
 
-        const user = { name, email, password, c_password }
-
-        console.log(user);
-        await addUser(user)
-        // window.location.href = ""
-        registerForm.reset()
-
-    })
+        const user = { name, email, password, c_password };
+        try {
+            await addUser(user);
+            alert("ragister complate.. redirect to login....");
+            window.location.href = "login.html";
+        }
+        catch (err) {
+            alert("ragisteration faild..")
+        }
+    });
 }
 
 if (loginForm) {
@@ -34,27 +36,37 @@ if (loginForm) {
         let email = document.getElementById("email").value
         let password = document.getElementById("pass").value
 
-        await loginUser(email, pass);
+        try {
+            const user = await loginUser(email, password);
+            if (user) {
+                alert("login successful....")
+                window.location.href = "contectdetail.html";
+            } else {
+                alert("email and password not matched..")
+            }
+        }catch(err){
+            alert("login failed....")
+        }
     })
 }
 
 
-let cuuUser = JSON.parse(localStorage.getItem("CurrUser"))
 
 if (Cot_form) {
-    CON_form.addEventListener("submit", async (e) => {
+    Cot_form.addEventListener("submit", async (e) => {
         e.preventDefault();
+        let cuuUser = JSON.parse(localStorage.getItem("CurrUser"))
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
-        if (cuuUser) {
-            let contact = { cuuUser, name, email, phone }
+        let contact = { cuuUser, name, email, phone }
+        try  {
             await addContact(contact);
-           alert("Contact Added....")
-           return;
+            alert("Contact Added....")
+            Cot_form.reset();
         }
-        else{
-            alert("login First");
+        catch (err) {
+            alert("failed to add contact....");
         }
     })
 }

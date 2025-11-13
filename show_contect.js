@@ -10,7 +10,7 @@ async function load_contects() {
     
     for (let i = 0; i < data.length; i++) {
 
-        if(curr_user == data[i].curr_user){
+        if(cuuUser == data[i].cuuUser){
             let tr = document.createElement("tr")
 
             // name coloum
